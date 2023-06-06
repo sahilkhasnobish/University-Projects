@@ -1,0 +1,185 @@
+t02
+Find customer by id_number
+Enter an ID: 23456
+['23456', 'Alice', 'Smith', '1200.50', '1998-02-20']
+2020-04-03 09:46
+
+Testing 'customer_by_id'
+
+Test various parameters: '['customers file variable', '12345']'
+OK
+Test various parameters: '['customers file variable', '45432']'
+OK
+Test various parameters: '['customers file variable', '9999']'
+OK
+Test for calls to forbidden Python functions: 'input'
+OK
+Test for calls to forbidden Python functions: 'print'
+OK
+Test for calls to forbidden Python functions: 'readlines'
+OK
+Test for calls to forbidden Python functions: 'open'
+OK
+Test for calls to forbidden Python functions: 'close'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test that the function does not use 'for':
+OK
+Test that the function does not hard code the length of the file:
+OK
+Test for misuse of function name:
+OK
+Tests: 13
+Successes: 13
+Errors: 0
+Failures: 0
+Skipped: 0
+
+t04
+2020-04-03 09:44
+
+Testing 'customer_first'
+
+Test various parameters: 'customers file variable'
+ERROR:
+Expected: ['43564', 'Weilin', 'Zhao', '450.25', '1998-01-03']
+Test for calls to forbidden Python functions: 'input'
+OK
+Test for calls to forbidden Python functions: 'print'
+OK
+Test for calls to forbidden Python functions: 'readlines'
+OK
+Test for calls to forbidden Python functions: 'open'
+OK
+Test for calls to forbidden Python functions: 'close'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test that the function does not use 'for':
+OK
+Test that the function does not hard code the length of the file:
+OK
+Test for misuse of function name:
+OK
+Tests: 11
+Successes: 10
+Errors: 1
+Failures: 0
+Skipped: 0
+
+t07
+2020-04-03 09:30
+
+Testing 'append_max_num'
+
+Test various parameters: 'File contents: 1'
+ERROR:
+Expected return value: 1
+Test various parameters: 'File contents: 3 1 2'
+ERROR:
+Expected return value: 3
+Test various parameters: 'File contents: numbers.txt'
+ERROR:
+Expected return value: 13
+Test for calls to forbidden Python functions: 'input'
+OK
+Test for calls to forbidden Python functions: 'readlines'
+OK
+Test for calls to forbidden Python functions: 'open'
+OK
+Test for calls to forbidden Python functions: 'close'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test that the function does not hard code the length of the file:
+OK
+Test for misuse of function name:
+OK
+Tests: 11
+Successes: 8
+Errors: 3
+Failures: 0
+Skipped: 0
+
+t10
+2020-04-03 10:03
+
+Testing 'count_frequency_word'
+
+Test various parameters: '['stuff', 'nonsense']'
+OK
+Test various parameters: '['a small file', 'small']'
+OK
+Test various parameters: '['words file variable', 'Exercise']'
+OK
+Test for calls to forbidden Python functions: 'input'
+OK
+Test for calls to forbidden Python functions: 'print'
+OK
+Test for calls to forbidden Python functions: 'readlines'
+OK
+Test for calls to forbidden Python functions: 'open'
+OK
+Test for calls to forbidden Python functions: 'close'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test that the function does not hard code the length of the file:
+OK
+Test for misuse of function name:
+OK
+Tests: 12
+Successes: 12
+Errors: 0
+Failures: 0
+Skipped: 0
+
+t14
+2020-04-03 10:17
+
+Testing 'file_copy_n'
+
+Test various parameters: '['stuff', 1]'
+ERROR:
+New file expects: stuff
+Test various parameters: '['a small file', 9]'
+ERROR:
+New file expects: a
+small
+file
+Test various parameters: '['words file variable', 4]'
+ERROR:
+New file expects: Hello
+Python
+Python
+Python
+Test for calls to forbidden Python functions: 'input'
+OK
+Test for calls to forbidden Python functions: 'readlines'
+OK
+Test for calls to forbidden Python functions: 'open'
+OK
+Test for calls to forbidden Python functions: 'close'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test that the function does not hard code the length of the file:
+OK
+Test for misuse of function name:
+OK
+Tests: 11
+Successes: 8
+Errors: 3
+Failures: 0
+Skipped: 0

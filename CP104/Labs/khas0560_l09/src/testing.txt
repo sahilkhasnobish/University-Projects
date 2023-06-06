@@ -1,0 +1,194 @@
+t02
+Enter the website address: www.yahoo.com
+business
+
+Enter the website address: code.org
+non-profit
+
+Enter the website address: www.google.ca
+other
+
+2020-03-27 10:40
+
+Testing 'url_categorize'
+
+Test various parameters: 'www.yahoo.com'
+OK
+Test various parameters: 'code.org'
+OK
+Test various parameters: 'www.google.ca'
+OK
+Test various parameters: 'com.weird.ca'
+OK
+Test for calls to forbidden Python functions: 'input'
+OK
+Test for calls to forbidden Python functions: 'print'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test for misuse of function name:
+OK
+Tests: 9
+Successes: 9
+Errors: 0
+Failures: 0
+Skipped: 0
+
+t04
+
+Enter a product code: BFG9000x7
+Category BFG is valid.
+ID 9000 is valid.
+Qualifier x7 is not valid
+
+Enter a product code: ab34544Jdt
+Category ab3 is not valid.
+ID 4544 is valid.
+Qualifier Jdt is not valid
+2020-03-27 10:43
+
+Testing 'validate_code'
+
+Test various parameters: ''
+OK
+Test various parameters: 'BF'
+OK
+Test various parameters: 'BFG'
+OK
+Test various parameters: 'BFG900'
+OK
+Test various parameters: 'BFG9000'
+OK
+Test various parameters: 'BFG9000x7'
+OK
+Test various parameters: 'BFG9000X7'
+OK
+Test for calls to forbidden Python functions: 'input'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test for misuse of function name:
+OK
+Tests: 11
+Successes: 11
+Errors: 0
+Failures: 0
+Skipped: 0
+
+t06
+
+Enter a string: Hello
+'Hello' is not a palindrome
+
+Enter a string: racecar
+'racecar' is a palindrome
+2020-03-27 10:02
+
+Testing 'is_palindrome'
+
+Test various parameters: 'racecar'
+OK
+Test various parameters: ''
+OK
+Test various parameters: 'a'
+OK
+Test various parameters: 'aA'
+OK
+Test various parameters: 'David'
+OK
+Test for calls to forbidden Python functions: 'input'
+OK
+Test for calls to forbidden Python functions: 'print'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test for misuse of function name:
+OK
+Tests: 10
+Successes: 10
+Errors: 0
+Failures: 0
+Skipped: 0
+
+t12
+Enter a string: Number 1, Number 2, Number 3,
+Number 1. Number 2. Number 3.
+2020-03-27 10:14
+
+Testing 'comma_period_replace'
+
+Test various parameters: 'xyz'
+OK
+Test various parameters: ','
+OK
+Test various parameters: ',,,'
+OK
+Test various parameters: 'Number 1, Number 2, Number 3,'
+OK
+Test for calls to forbidden Python functions: 'input'
+OK
+Test for calls to forbidden Python functions: 'print'
+OK
+Test for calls to forbidden Python functions: 'replace'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test for misuse of function name:
+OK
+Tests: 10
+Successes: 10
+Errors: 0
+Failures: 0
+Skipped: 0
+
+t14
+
+Enter first string: Hello
+Enter second string: Goodbye
+Distance: -1
+
+Enter first string: North
+Enter second string: South
+Distance: 2
+
+Enter first string: David
+Enter second string: David
+Distance: 0
+
+2020-03-27 10:32
+
+Testing 'str_distance'
+
+Test various parameters: '('Hello', 'Goodbye')'
+OK
+Test various parameters: '('David', 'David')'
+OK
+Test various parameters: '('North', 'South')'
+OK
+Test various parameters: '('', '')'
+OK
+Test various parameters: '('XxX', 'xXx')'
+OK
+Test for calls to forbidden Python functions: 'input'
+OK
+Test for calls to forbidden Python functions: 'print'
+OK
+Test docstring documentation:
+OK
+Test for multiple returns:
+OK
+Test for misuse of function name:
+OK
+Tests: 10
+Successes: 10
+Errors: 0
+Failures: 0
+Skipped: 0
