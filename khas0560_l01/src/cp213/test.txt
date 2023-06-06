@@ -1,3 +1,0 @@
-Using the Scanner methods listed in the Java API, alter the sample code to do the following:
-Alter the sample program's main method to quit only when a q is entered and to reject all other non-integers with an error message.
-Write a method readTokens that reads from its own source code file and prints every token in the file on its own line. You'll need to create a File object with the java.io.File class:
