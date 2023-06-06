@@ -1,0 +1,24 @@
+The output of: uname -a : is
+>>>>>>>>>>>>>>>
+Darwin Sahils-MacBook-Pro.local 21.3.0 Darwin Kernel Version 21.3.0: Wed Jan  5 21:37:58 PST 2022; root:xnu-8019.80.24~20/RELEASE_ARM64_T6000 arm64
+<<<<<<<<<<<<<<<
+The output of: free -m : is
+>>>>>>>>>>>>>>>
+There's an error so pipe can not be opened. 
+<<<<<<<<<<<<<<<
+The output of: s  : is
+>>>>>>>>>>>>>>>
+There's an error so pipe can not be opened. 
+<<<<<<<<<<<<<<<
+The output of:  -a -F : is
+>>>>>>>>>>>>>>>
+There's an error so pipe can not be opened. 
+<<<<<<<<<<<<<<<
+The output of: whoami : is
+>>>>>>>>>>>>>>>
+sahilkhasnobish
+<<<<<<<<<<<<<<<
+The output of: pwd : is
+>>>>>>>>>>>>>>>
+/Users/sahilkhasnobish/Desktop/Laurier/Eclipse /CP-386-spring 2022/process_management
+<<<<<<<<<<<<<<<
