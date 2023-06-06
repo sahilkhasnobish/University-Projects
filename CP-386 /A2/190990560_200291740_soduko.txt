@@ -1,0 +1,178 @@
+/*
+ -------------------------------------
+ File:    190990560_200291740_soduko.c
+ Project: A2
+ file description
+ -------------------------------------
+ Author:  Sahil Khasnobish
+ ID:      190990560
+ Version  2022-06-21
+
+ Author:  Jaini Patel
+ ID:      200291740
+ Version  2022-06-21
+ -------------------------------------
+ */
+#include <stdio.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int check_rows();
+int check_columns();
+int check_sub_grids();
+int copy_arr();
+int check_in_array();
+//array containing the puzzle
+int puzzle_arr[9][9];
+//array containing numbers 1-9
+int num_array[9];
+
+int main() {
+	FILE *fp = fopen("sample1_in.txt", "r");
+	for (int i = 0; i < 9; ++i)
+		for (int j = 0; j < 9; ++j)
+			fscanf(fp, "%d", &puzzle_arr[i][j]);
+	int is_valid[11];
+	//keeps track of threads, i=1 and i=2 are threads that check r/c,
+	//the remaining 9 check the sub grids
+	//intializes everything to 0 since threads are not created yet
+	for (int i = 1; i < 11; i++) {
+		is_valid[i] = 0;
+	}
+
+	int r = 0;
+	int c = 0;
+
+	//arrays for the sub grids
+	int row_arr[] = { 1, 4, 7 };
+	int col_arr[] = { 1, 4, 7 };
+
+	//array containing numbers 1-9
+	int num_array[9];
+	for (int i = 1; i < 10; i++) {
+		num_array[i] = i;
+	}
+	for (int i = 1; i < 11; i++) {
+		//create a thread that checks rows
+		if ((i == 1) && (is_valid[i] == 0)) {
+			/*
+			 pthread_t tid;
+			 pthread_attr_t attr;
+			 pthread_create(&tid, NULL, check_rows, argv[1]);
+			 pthread_join(tid, NULL);
+			 */
+			if (check_rows() == 0)
+				printf("Soduko puzzle is invalid");
+			return 0;
+		}
+		//create thread that checks columns
+		if ((i == 2) && (is_valid[i] == 0)) {
+			/*
+			 pthread_t tid;
+			 pthread_create(&tid, NULL, check_columns, argv[1]);
+			 pthread_join(tid, NULL);
+			 */
+			if (check_columns() == 0)
+				printf("Soduko puzzle is invalid");
+			return 0;
+		}
+		if ((i > 2) && (is_valid[i] == 0)) {
+			for (int row = 0; row < 3; i++) {
+				for (int col = 0; col < 3; col++) {
+					//parameters *data = (parameters*) malloc(sizeof(parameters));
+					r = row_arr[row];
+					c = col_arr[col];
+					/*
+					 pthread_t tid;
+					 pthread_create(&tid, NULL, check_sub_grids, argv[1]);
+					 pthread_join(tid, NULL);
+					 */
+					if (check_sub_grids(r, c) == 0)
+						printf("Soduko puzzle is valid");
+					return 0;
+				}
+
+			}
+		}
+
+	}
+	printf("Soduko puzzle is valid");
+	return 0;
+
+}
+
+int check_rows() {
+	int valid = 1;
+	int row_to_check = copy_arr(num_array);
+	for (int i = 0; i < 9; i++) {
+		for (int j = 0; j < 9; j++) {
+			int value = puzzle_arr[i][j];
+			//checks if row is valid or not, returns 1 if valid, 0 if invalid
+			if ((check_in_array(row_to_check, value)) == 0) {
+				valid = 0;
+			}
+		}
+	}
+	return valid;
+}
+
+int check_columns() {
+	int valid = 1;
+	int col_to_check = copy_arr(num_array);
+	for (int i = 0; i < 9; i++) {
+		for (int j = 0; j < 9; j++) {
+			int value = puzzle_arr[i][j];
+			//checks if column is valid or not, returns 1 if valid, 0 if invalid
+			if ((check_in_array(col_to_check, value)) == 0) {
+				valid = 0;
+			}
+		}
+	}
+	return valid;
+}
+
+int check_sub_grids( rows, col) {
+	int temp_arr[9];
+	int valid = 1;
+	int n = 0;
+	int values = copy_arr(num_array);
+	for (int i = rows; i < rows + 2; i++) {
+		for (int j = col; j < col + 2; j++) {
+			temp_arr[n] = puzzle_arr[i][j];
+			n += 1;
+
+		}
+	}
+	for (int i = 0; i < 9; i++) {
+		int value = i;
+		//"checks if subgrid is valid or not, returns 1 if valid, 0 if invalid
+		if ((check_in_array(values, value)) == 0) {
+			valid = 0;
+		}
+	}
+	return valid;
+}
+
+//if result is 1, the element exists
+//since the found element is changed to 0
+//if this functions returns 0, this means there was a repeating number
+//or a number that is not between 1 through 9
+int check_in_array(int *array, int value) {
+	int result = 0;
+	for (int i = 0; i < 9; i++) {
+		if (array[i] == value) {
+			result = 1;
+			array[i] = 0;
+		}
+	}
+	return result;
+}
+
+int copy_arr(int *array) {
+	int new_arr[9];
+	for (int i = 0; i < 9; i++) {
+		new_arr[i] = array[i];
+	}
+	return new_arr;
+}
