@@ -1,0 +1,99 @@
+"""
+-------------------------------------------------------
+Assignment  Testing
+-------------------------------------------------------
+Author:  Sahil Khasnobish
+ID:      190990560
+Email:   khas0560@mylaurier.ca
+Version: 2020-01-31
+-------------------------------------------------------
+"""
+-------------------------------------------------------
+t01
+Enter number of balloons: 40
+Enter number of children: 20
+
+Ballons per child: 2
+Balloons left over: 0
+
+Enter number of balloons: 40
+Enter number of children: 23
+
+Ballons per child: 1
+Balloons left over: 17
+
+Enter number of balloons: 400
+Enter number of children: 400
+
+Ballons per child: 1
+Balloons left over: 0
+
+-------------------------------------------------------
+
+-------------------------------------------------------
+t02
+Enter your score in Assignments (0-100): 90
+Enter your score in Quizzes (0-100): 95
+Enter your score in Labs (0-100): 100
+Enter your score in Class Activities (0-100): 100
+Enter your score in Midterm (0-100): 85
+Enter your score in Final (0-100): 85
+
+Weighted Score in Assignments: 18
+Weighted Score in Quizzes: 10
+Weighted Score in Labs: 10
+Weighted Score in Class Activities: 10
+Weighted Score in Midterm: 17
+Weighted Score in Final: 26
+
+Your weighted score for CP104: 90
+
+Enter your score in Assignments (0-100): 43
+Enter your score in Quizzes (0-100): 23
+Enter your score in Labs (0-100): 45
+Enter your score in Class Activities (0-100): 56
+Enter your score in Midterm (0-100): 33
+Enter your score in Final (0-100): 56
+
+Weighted Score in Assignments: 9
+Weighted Score in Quizzes: 2
+Weighted Score in Labs: 4
+Weighted Score in Class Activities: 6
+Weighted Score in Midterm: 7
+Weighted Score in Final: 17
+
+Your weighted score for CP104: 44
+
+
+-------------------------------------------------------
+
+-------------------------------------------------------
+t03
+-------------------------------------------------------
+Enter a positive three digit integer: 673
+
+The product of the three digits in the integer (673) is: 126
+
+Enter a positive three digit integer: 345
+
+The product of the three digits in the integer (345) is: 60
+
+-------------------------------------------------------
+t04
+-------------------------------------------------------
+Enter the fat grams consumed: 386
+Enter the carbohydrate grams consumed: 283
+
+Total Calories: 4606
+Fat Calories: 3474
+Carb Calories: 1132
+
+Enter the fat grams consumed: 645
+Enter the carbohydrate grams consumed: 283
+
+Total Calories: 6937
+Fat Calories: 5805
+Carb Calories: 1132
+
+
+-------------------------------------------------------

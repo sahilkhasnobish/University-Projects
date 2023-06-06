@@ -1,0 +1,165 @@
+t01
+
+Enter number of lines: 0
+Invalid number of lines
+
+Enter number of lines: 1
+#
+
+Enter number of lines: 2
+#
+##
+
+Enter number of lines: 3
+#
+##
+###
+
+Enter number of lines: 4
+#
+##
+# #
+####
+
+Enter number of lines: 7
+#
+##
+# #
+#  #
+#   #
+#    #
+#######
+
+t02
+
+Enter string1: AA
+Enter string2: BB
+Enter value of n: 3
+AA BB AA 
+
+Enter string1: CC
+Enter string2: DD
+Enter value of n: 7
+CC DD CC DD CC 
+DD CC 
+
+Enter string1: GG
+Enter string2: HH
+Enter value of n: 20
+GG HH GG HH GG 
+HH GG HH GG HH 
+GG HH GG HH GG 
+HH GG HH GG HH 
+
+Enter string1: EE
+Enter string2: FF
+Enter value of n: -5
+
+t03
+
+Enter T width: 15
+Enter T height: 11
+Enter symbol: R
+RRRRRRRRRRRRRRR
+       R       
+       R       
+       R       
+       R       
+       R       
+       R       
+       R       
+       R       
+       R       
+       R       
+
+Enter T width: 1
+Enter T height: 8
+Enter symbol: U
+U
+U
+U
+U
+U
+U
+U
+U
+
+Enter T width: 3
+Enter T height: 3
+Enter symbol: *
+***
+ * 
+ * 
+
+Enter T width: 21
+Enter T height: 1
+Enter symbol: Y
+YYYYYYYYYYYYYYYYYYYYY
+
+Enter T width: 0
+Enter T height: 9
+Enter symbol: #
+Error(draw_T): Invalid width
+
+Enter T width: 12
+Enter T height: 12
+Enter symbol: &
+Error(draw_T): Invalid width
+
+Enter T width: 7
+Enter T height: -2
+Enter symbol: B
+Error(draw_T): Invalid height
+
+t04
+
+Enter start value: -10000
+Enter final value: 0
+Enter order: A
+
+Report: Printing Failed
+
+Enter start value: 0
+Enter final value: 100000
+Enter order: A
+
+Report: Printing Failed
+
+Enter start value: 9999
+Enter final value: -9999
+Enter order: A
+
+Report: Printing Failed
+
+Enter start value: 0
+Enter final value: 1000
+Enter order: R
+
+Report: Printing completed successfully
+
+Enter start value: -6
+Enter final value: 8
+Enter order: A
+
+-5     -3     -1     1     3     
+5     7     
+Report: Printing completed successfully
+
+Enter start value: 80000
+Enter final value: 80020
+Enter order: D
+
+80019     80017     80015     80013     80011     
+80009     80007     80005     80003     80001     
+
+Report: Printing completed successfully
+
+Enter start value: -35
+Enter final value: -10
+Enter order: D
+
+-11     -13     -15     -17     -19     
+-21     -23     -25     -27     -29     
+-31     -33     -35     
+Report: Printing completed successfully
+

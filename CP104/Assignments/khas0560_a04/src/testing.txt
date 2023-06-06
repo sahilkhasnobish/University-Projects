@@ -1,0 +1,14 @@
+"""
+    -------------------------------------------------------
+    
+    Calculates the federal tax. 
+    Use: total_fed_tax = calc_federal_tax(income)
+    -------------------------------------------------------
+
+    Parameters:
+        income: int>0
+    Returns
+        total_fed_tax: the total federal tax calculated based on the income
+        
+    -------------------------------------------------------
+     """

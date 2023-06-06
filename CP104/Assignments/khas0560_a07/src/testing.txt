@@ -1,0 +1,92 @@
+t01
+Enter "red" or "green" or press ENTER to stop: RED
+Enter "red" or "green" or press ENTER to stop: gReen
+Enter "red" or "green" or press ENTER to stop: yellow
+Enter "red" or "green" or press ENTER to stop: GREEN
+Enter "red" or "green" or press ENTER to stop: green
+Enter "red" or "green" or press ENTER to stop: red
+Enter "red" or "green" or press ENTER to stop: rEd
+Enter "red" or "green" or press ENTER to stop: 
+
+Number of "red" entered: 3
+Number of "green" entered: 3
+
+tie
+
+Enter "red" or "green" or press ENTER to stop: GREEN
+Enter "red" or "green" or press ENTER to stop: green
+Enter "red" or "green" or press ENTER to stop: grEn
+Enter "red" or "green" or press ENTER to stop: greeN
+Enter "red" or "green" or press ENTER to stop: RED
+Enter "red" or "green" or press ENTER to stop: rED
+Enter "red" or "green" or press ENTER to stop: blue
+Enter "red" or "green" or press ENTER to stop: 
+
+Number of "red" entered: 2
+Number of "green" entered: 3
+
+"green" team wins!!!
+
+Enter "red" or "green" or press ENTER to stop: GREEN
+Enter "red" or "green" or press ENTER to stop: ReD
+Enter "red" or "green" or press ENTER to stop: purPle
+Enter "red" or "green" or press ENTER to stop: green
+Enter "red" or "green" or press ENTER to stop: RED
+Enter "red" or "green" or press ENTER to stop: ReD
+Enter "red" or "green" or press ENTER to stop: rED
+Enter "red" or "green" or press ENTER to stop: 
+
+Number of "red" entered: 4
+Number of "green" entered: 2
+
+"red" team wins!!!
+
+t02
+Enter a list of values: 100,400000,3,2,14,5.5
+
+The maximum difference is 399997.
+
+t03
+Enter a positive integer: -4
+Enter a positive integer: 5
+Enter a positive integer: 4
+Enter a positive integer: 7
+Enter a positive integer: 180000
+Enter a positive integer: -56.3
+Enter a positive integer: 4
+Enter a positive integer: 0
+
+List entered: [5, 4, 7, 180000, 4]
+
+t04
+Enter a positive integer: 23
+Enter a positive integer: 45
+Enter a positive integer: -2535
+Enter a positive integer: 94.2342
+Enter a positive integer: 3
+Enter a positive integer: 7
+Enter a positive integer: 12
+Enter a positive integer: 23
+Enter a positive integer: 0
+
+List entered: [23, 45, 3, 7, 12, 23]
+
+Enter target = 23
+
+Target exists at location(s): [0, 5]
+
+Enter a positive integer: 2
+Enter a positive integer: 375
+Enter a positive integer: 45
+Enter a positive integer: -4535
+Enter a positive integer: 434.23
+Enter a positive integer: 68
+Enter a positive integer: 3546
+Enter a positive integer: 1
+Enter a positive integer: 0
+
+List entered: [2, 375, 45, 68, 3546, 1]
+
+Enter target = 55
+
+Target exists at location(s): []

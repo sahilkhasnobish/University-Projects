@@ -1,0 +1,21 @@
+t01
+Enter a series of digits: 162g2gdfdf2
+The sum is: 13
+
+t02
+Enter a string: today is a sunny day
+['a', 'y']
+
+Enter a string: make sure to self quarantine!
+['e']
+
+t03
+Enter a sentence: Hey! Im Sahil. how are you?
+Capitalized Sentence: Hey! im sahil. How are you?
+
+t04
+Enter strings: tree ear read
+True
+
+Enter strings: pencil ruler
+False

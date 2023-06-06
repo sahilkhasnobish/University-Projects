@@ -1,0 +1,20 @@
+t01
+Please enter your investment amount: 100000
+Please enter number of years: 4
+Year	Value (Million Dollars)
+---- -----------------------
+   1                105000.000000
+   2                110250.000000
+   3                115762.500000
+   4                121550.625000
+t02
+Enter a positive integer: 17
+
+Perfect squares below 17 are: 1, 4, 9, 16, 
+Enter a positive integer: 9
+
+Perfect squares below 9 are: 1, 4, 
+t03
+Enter a positive integer: 19
+19! = 121645100408832000
+t04
